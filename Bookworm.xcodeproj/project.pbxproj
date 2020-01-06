@@ -14,6 +14,7 @@
 		E2EE8C5523C3404B004D8796 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E2EE8C5423C3404B004D8796 /* Assets.xcassets */; };
 		E2EE8C5823C3404B004D8796 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E2EE8C5723C3404B004D8796 /* Preview Assets.xcassets */; };
 		E2EE8C5B23C3404B004D8796 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2EE8C5923C3404B004D8796 /* LaunchScreen.storyboard */; };
+		E2EE8C6323C348B8004D8796 /* AddBookView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2EE8C6223C348B8004D8796 /* AddBookView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		E2EE8C5723C3404B004D8796 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		E2EE8C5A23C3404B004D8796 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E2EE8C5C23C3404B004D8796 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E2EE8C6223C348B8004D8796 /* AddBookView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddBookView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +68,7 @@
 				E2EE8C5C23C3404B004D8796 /* Info.plist */,
 				E2EE8C4F23C3404A004D8796 /* Bookworm.xcdatamodeld */,
 				E2EE8C5623C3404B004D8796 /* Preview Content */,
+				E2EE8C6223C348B8004D8796 /* AddBookView.swift */,
 			);
 			path = Bookworm;
 			sourceTree = "<group>";
@@ -153,6 +156,7 @@
 				E2EE8C5123C3404A004D8796 /* Bookworm.xcdatamodeld in Sources */,
 				E2EE8C5323C3404A004D8796 /* ContentView.swift in Sources */,
 				E2EE8C4E23C3404A004D8796 /* SceneDelegate.swift in Sources */,
+				E2EE8C6323C348B8004D8796 /* AddBookView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
