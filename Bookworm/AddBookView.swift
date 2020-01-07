@@ -10,6 +10,7 @@ import SwiftUI
 
 struct AddBookView: View {
     @Environment(\.managedObjectContext) var moc
+    @Environment(\.presentationMode) var presentationMode
     
     @State private var title = ""
     @State private var author = ""
@@ -33,11 +34,7 @@ struct AddBookView: View {
                 }
                 
                 Section {
-                    Picker("Rating", selection: $rating) {
-                        ForEach(0..<6) {_ in
-                            Text("\(0)")
-                        }
-                    }
+                    RatingView(rating: $rating)
                     
                     TextField("Write a review", text: $review)
                 }
@@ -48,9 +45,11 @@ struct AddBookView: View {
                         newBook.title = self.title
                         newBook.author = self.author
                         newBook.rating = Int16(self.rating)
-                        newBook.genre = self.genre
+                        newBook.genre = self.genre.isEmpty ? self.genres.randomElement()! : self.genre
                         newBook.review = self.review
+                        newBook.date = Date()
                         try? self.moc.save()
+                        self.presentationMode.wrappedValue.dismiss()
                     }
                 }
             }
